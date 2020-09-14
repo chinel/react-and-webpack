@@ -22,10 +22,10 @@ module.exports = {
         },
       },
     ],
-    plugins: [
-      new htmlWebpackPlugin({
-        template: "./index.html",
-      }),
-    ],
   },
+  plugins: [
+    new htmlWebpackPlugin({
+      template: "./index.html",
+    }),
+  ],
 };
