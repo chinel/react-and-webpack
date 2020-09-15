@@ -1,5 +1,10 @@
-const htmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
+  entry: "index.js",
+  output: {
+    filename: "bundle.js",
+  },
   module: {
     rules: [
       {
@@ -24,7 +29,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new htmlWebpackPlugin({
+    new HtmlWebpackPlugin({
       template: "./index.html",
     }),
   ],
